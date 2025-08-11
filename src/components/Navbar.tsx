@@ -45,7 +45,7 @@ export default function Navbar() {
             </motion.div>
           ))}
           <Link
-            href="/login"
+            href="/signin"
             className="bg-green-700 text-white px-5 py-2 rounded-full hover:bg-green-800 transition"
           >
             Sign In
@@ -83,7 +83,7 @@ export default function Navbar() {
                 </Link>
               ))}
               <Link
-                href="/login"
+                href="/signin"
                 className="bg-green-700 text-white px-5 py-2 rounded-full hover:bg-green-800 transition"
                 onClick={() => setMenuOpen(false)}
               >
