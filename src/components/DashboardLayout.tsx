@@ -8,6 +8,8 @@ import {
   Building,
   Home,
   LogOut,
+  User2Icon,
+  FilesIcon,
 } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -45,21 +47,31 @@ export default function DashboardLayout({
   }, []);
 
   const menuItems = [
-    { name: "Overview", icon: <Home size={20} />, href: "/dashboard" },
+    { name: "Overview", icon: <Home size={20} />, href: "/main/dashboard" },
     {
       name: "Investor",
       icon: <Briefcase size={20} />,
-      href: "/dashboard/investor",
+      href: "/main/investors",
     },
     {
-      name: "Field Owner",
+      name: "Field",
       icon: <LandPlot size={20} />,
-      href: "/dashboard/field-owner",
+      href: "/main/fields",
     },
     {
       name: "Developer",
       icon: <Building size={20} />,
-      href: "/dashboard/developer",
+      href: "/main/developers",
+    },
+     {
+      name: "Laporan Investasi",
+      icon: <FilesIcon size={20} />,
+      href: "/main/reports/investments",
+    },
+    {
+      name: "Admin",
+      icon: <User2Icon size={20} />,
+      href: "/main/admin",
     },
   ];
 
